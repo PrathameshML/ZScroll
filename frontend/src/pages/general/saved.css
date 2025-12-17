@@ -1,0 +1,6 @@
+.saved-page { /* using App.css definitions */ }
+.saved-grid { display:grid; grid-template-columns: repeat(1,1fr); gap:12px; margin-top:12px }
+.saved-card { background:#0c0d0e; border-radius:8px; overflow:hidden }
+.saved-thumb { width:100%; height:220px; object-fit:cover; display:block }
+.saved-info { padding:8px }
+.saved-title { color:#fff; font-weight:600 }

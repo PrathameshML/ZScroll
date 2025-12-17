@@ -1,0 +1,82 @@
+/* createfood.css - Mobile-first styles for CreateFood page */
+
+.fp-page {
+  min-height: 100vh;
+  padding: 18px 12px;
+  display: flex;
+  justify-content: center;
+  background: #f5f7fb;
+}
+
+.create-food-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.06);
+  color: #111827;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.title { font-size: 18px; font-weight: 600; }
+.small { font-size: 13px; color: #6b7280; }
+
+.form-row { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+label { font-size: 13px; color: #374151; }
+input[type="text"], textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111827;
+  outline: none;
+}
+textarea { min-height: 92px; resize: vertical; }
+
+.file-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.file-label {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.file-name { font-size: 13px; color: #374151; }
+
+.video-preview {
+  margin-top: 10px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-preview video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.actions { display: flex; gap: 10px; align-items: center; margin-top: 6px; }
+.btn { padding: 10px 14px; border-radius: 10px; background: #2563eb; color: #fff; border: none; cursor: pointer; font-weight: 600; }
+.btn.ghost { background: transparent; color: #111827; border: 1px solid #e5e7eb; }
+
+.notice { font-size: 13px; color: #6b7280; margin-top: 6px; }
+
+/* Larger screens */
+@media (min-width: 640px) {
+  .create-food-card { padding: 20px; }
+  .title { font-size: 20px; }
+}

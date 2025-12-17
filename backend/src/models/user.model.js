@@ -1,7 +1,7 @@
 const e = require('express');
-const mongoode=require('mongoose');
+const mongoose=require('mongoose');
 
-const userSchema=new mongoode.Schema({
+const userSchema=new mongoose.Schema({
     fullname:{
         type:String,
         required:true
